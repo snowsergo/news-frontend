@@ -1,0 +1,10 @@
+.header__underline{
+  height:3px;
+  width:100%;
+  background-color: white;
+  position: absolute;;
+  bottom:-1px;
+}
+.header__underline_black{
+  background-color:black;
+}

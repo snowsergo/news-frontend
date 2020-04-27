@@ -1,0 +1,13 @@
+.header__menu_mobile{
+  width:24px;
+  height: 24px;
+  display:none;
+  margin:auto 40px auto 0;
+}
+
+
+@media screen and (max-width:669px) {
+  .header__menu_mobile{
+    margin-right: 16px;
+  }
+}

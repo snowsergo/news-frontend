@@ -1,0 +1,29 @@
+.search__button{
+  color: white;
+  border-radius: 100px;
+  border:none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  width:168px;
+  height: 100%;
+  background-color: #2F71E5;;
+
+}
+.search__button:hover{
+  cursor: pointer;
+}
+
+.search__button:active{
+  background-color:#2A65CC;
+}
+
+@media screen and (max-width:500px) {
+  .search__button{
+      position: absolute;
+      width:100%;
+      top: 74px;
+}
+}

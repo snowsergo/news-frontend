@@ -1,0 +1,15 @@
+.header__login-button_menu{
+  display: block;
+  width:288px;
+  height:56px;
+  margin:22px auto 24px;
+  color: white;
+  border: 1px solid #FFFFFF;
+  border-radius: 100px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: transparent;
+}

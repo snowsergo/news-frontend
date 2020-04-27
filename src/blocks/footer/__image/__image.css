@@ -1,0 +1,19 @@
+.footer__image{
+
+  width:22px;
+  height: auto;
+  text-decoration: none;
+
+}
+
+@media screen and (min-width:701px) and (max-width:1000px) {
+  .footer__image{
+
+  }
+}
+
+@media screen and (max-width:700px) {
+  .footer__image{
+
+  }
+}

@@ -1,0 +1,36 @@
+@import url(./__logout-container/__logout-container.css);
+
+.header__logout-button{
+  color: white;
+  border: 1px solid #FFFFFF;
+  border-radius: 100px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  height: 48px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left:14px;
+  padding-right:10px;
+}
+.header__logout-button_black{
+  color: black;
+  border: 1px solid black;
+}
+
+@media screen and (max-width:768px) {
+  .header__logout-button{
+    height: 40px;
+  }
+  .header__logout-button_menu{
+    height: 56px;
+    width:288px;
+    margin:22px auto 24px;
+    align-items: center;
+  }
+
+}

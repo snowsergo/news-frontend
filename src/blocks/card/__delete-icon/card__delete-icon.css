@@ -1,0 +1,16 @@
+.card__delete-icon {
+  width:40px;
+  height:40px;
+  position:absolute;
+  top:0px;
+  right:0px;
+  border-radius:10px;
+  background: url(../../../images/delete.png) center no-repeat;
+  background-color: white;
+
+}
+.card__delete-icon:hover {
+  background: url(../../../images/delete_active.png) center no-repeat;
+  background-color: white;
+  cursor: pointer;
+}

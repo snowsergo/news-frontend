@@ -1,0 +1,18 @@
+.footer__social{
+
+   width:72px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+
+}
+
+@media screen and (max-width:1000px) {
+  .footer__social{
+    margin-left: auto;
+
+
+  }
+}

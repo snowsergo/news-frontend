@@ -1,0 +1,49 @@
+@import url(./__page-name_menu/header__page-name_menu.css);
+
+.header__page-name {
+  color: white;
+  margin:0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+}
+
+.header__page-name_black{
+  color: black;
+}
+.header__page-name:hover{
+cursor: pointer;
+}
+
+.header__page-name_inactive{
+text-decoration: none;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #B6BCBF;
+cursor: pointer;
+}
+
+.header__page-name_inactive:hover{
+  cursor: pointer;
+}
+
+@media screen and (max-width:800px) {
+  .header__page-name{
+    font-size: 16px;
+  }
+  .header__page-name_inactive{
+    font-size: 16px;
+  }
+
+}

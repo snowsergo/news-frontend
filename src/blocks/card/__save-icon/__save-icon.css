@@ -1,0 +1,26 @@
+.card__save-icon {
+  width:40px;
+  height:40px;
+  position:absolute;
+  top:0px;
+  right:0px;
+  border-radius:10px;
+  background: url(../../../images/flag-normal.svg) center no-repeat;
+  background-color: white;
+
+}
+.card__save-icon:hover {
+  background: url(../../../images/flag-hover.svg) center no-repeat;
+  background-color: white;
+  cursor: pointer;
+}
+
+.card__save-icon_saved {
+  background: url(../../../images/flag-marked.svg) center no-repeat;
+  background-color: white;
+}
+
+.card__save-icon_saved:hover {
+  background: url(../../../images/flag-marked.svg) center no-repeat;
+  background-color: white;
+}

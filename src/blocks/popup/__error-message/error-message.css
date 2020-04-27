@@ -1,0 +1,17 @@
+.error-message{
+    color:#FF0000;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    margin:0;
+    font-size: 12px;
+    line-height: 15px;
+    position: absolute;
+    left:0;
+    top: 34px;
+  
+}
+
+.error-message.error-message__visible{
+    display:block;
+}

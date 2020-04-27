@@ -1,0 +1,10 @@
+.popup__link{
+  margin:0;
+  color: #2F71E5;
+  text-decoration: none;
+}
+
+.popup__link_success{
+  font-size: 18px;
+  line-height: 22px;
+}

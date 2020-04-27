@@ -1,0 +1,17 @@
+@import url(./_menu/popup__close_menu.css);
+
+.popup__close {
+  width: 23px;
+  position: absolute;
+  top: -26px;
+  right: -26px;
+  cursor: pointer;
+}
+
+@media screen and (max-width:540px) {
+  .popup__close {
+    top: -37px;
+  right: 16px;
+
+  }
+}

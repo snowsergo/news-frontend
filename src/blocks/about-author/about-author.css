@@ -1,0 +1,11 @@
+@import url(./__container/__container.css);
+@import url(./__image/__image.css);
+@import url(./__quote/__quote.css);
+@import url(./__text-content/__text-content.css);
+@import url(./__title/__title.css);
+
+.about-author{
+
+background-color: white;
+display: flex;
+}

@@ -1,0 +1,20 @@
+.about-author__image{
+  width:100%;
+  min-width:272px;
+
+
+
+}
+
+@media screen and (min-width:1201px) {
+  .about-author__image{
+width:464px;
+  }
+}
+
+@media screen and (min-width:280px) and (max-width:1200px) {
+  .about-author__image{
+    width:232px;
+
+  }
+}

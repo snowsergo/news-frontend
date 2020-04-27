@@ -1,0 +1,36 @@
+@import url(./__copyright/__copyright.css);
+@import url(./__image/__image.css);
+@import url(./__links/__links.css);
+@import url(./__menu/__menu.css);
+@import url(./__pages/__pages.css);
+@import url(./__social/__social.css);
+
+.footer{
+background-color: white;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding:30px 104px 30px 104px;
+}
+
+@media screen and (min-width:701px) and (max-width:1000px) {
+  .footer{
+    padding:30px 40px 30px 40px;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .footer{
+    flex-direction:column-reverse;
+    justify-content: end;
+    padding:30px 40px 30px 40px;
+
+  }
+}
+
+@media screen and (max-width:500px) {
+  .footer{
+    padding:30px 16px 30px 16px;
+
+  }
+}

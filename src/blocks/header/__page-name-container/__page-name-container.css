@@ -1,0 +1,13 @@
+.header__page-name-container{
+  height:100%;
+  display:flex;
+  position: relative;
+  margin-left:32px;
+  align-items: center;
+}
+
+@media screen and (max-width:768px) {
+  .header__page-name-container{
+    margin-left: 16px;
+  }
+}

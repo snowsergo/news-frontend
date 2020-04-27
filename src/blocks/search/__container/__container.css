@@ -1,0 +1,27 @@
+.search__container{
+margin-left:416px;
+margin-right:416px;
+margin:0px auto;
+width:608px;
+position: relative;
+}
+
+@media screen and (max-width:660px) {
+  .search__container{
+
+
+width: calc(100vw - 38px);
+  }
+}
+
+@media screen and (min-width:769px) and (max-width:1200px) {
+  .search__container{
+
+  }
+}
+
+@media screen and (min-width:1201px) and (max-width:1400px) {
+  .search__container{
+
+  }
+}

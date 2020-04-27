@@ -1,0 +1,25 @@
+.card__label-container{
+position: absolute;
+top:24px;
+right:24px;
+left:24px;
+display:flex;
+flex-direction: row;
+
+}
+
+@media screen and (min-width:760px) and (max-width:1200px) {
+  .card__label-container{
+    top:8px;
+    right:8px;
+    left:8px;
+  }
+}
+
+@media screen and (max-width:759px) {
+  .card__label-container{
+    top:16px;
+    right:16px;
+    left:8px;
+  }
+}

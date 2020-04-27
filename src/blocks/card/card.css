@@ -1,0 +1,64 @@
+@import url(./__image-container/__image-container.css);
+@import url(./__image/__image.css);
+@import url(./__label-container/__label-container.css);
+@import url(./__save-icon/__save-icon.css);
+@import url(./__delete-icon/card__delete-icon.css);
+@import url(./__tooltip/__tooltip.css);
+@import url(./__tag/card__tag.css);
+@import url(./__info-container/__info-container.css);
+@import url(./__date/__date.css);
+@import url(./__title/__title.css);
+@import url(./__text/__text.css);
+@import url(./__source/__source.css);
+
+.card{
+border-radius: 20px;
+background-color: white;
+overflow: hidden;
+position: relative;
+height: 576px;
+
+}
+
+@media screen and (min-width:1101px) and (max-width:1250px) {
+  .card{
+    height: 540px;
+  }
+}
+
+
+@media screen and (min-width:900px) and (max-width:1100px) {
+  .card{
+    height: 510px;
+  }
+}
+
+@media screen and (min-width:781px) and (max-width:899px) {
+  .card{
+    height: 450px;
+  }
+}
+
+@media screen and (min-width:760px) and (max-width:780px) {
+  .card{
+    height: 420px;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:760px) {
+  .card{
+    height: 470px;
+}
+}
+
+@media screen and (min-width:500px) and (max-width:599px) {
+  .card{
+    height: 420px;
+}
+}
+
+@media screen and (max-width:499px) {
+  .card{
+    height: 440px;
+  }
+}

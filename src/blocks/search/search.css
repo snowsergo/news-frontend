@@ -1,0 +1,26 @@
+@import url(./__image/__image.css);
+@import url(./__container/__container.css);
+@import url(./__title/__title.css);
+@import url(./__subtitle/__subtitle.css);
+@import url(./__bar/__bar.css);
+@import url(./__input/__input.css);
+@import url(./__button/__button.css);
+
+
+.search {
+background-image: url(../../images/search.png);
+background-position: center;
+padding-bottom:80px;
+}
+
+@media screen and (max-width:768px) {
+  .search{
+    padding-bottom:48px;
+}
+}
+
+@media screen and (max-width:500px) {
+  .search{
+    padding-bottom:104px;
+}
+}

@@ -1,0 +1,44 @@
+@import url(./__login-button/__login-button.css);
+@import url(./__logout-button/__logout-button.css);
+@import url(./__menu/__menu.css);
+@import url(./__menu_mobile/header__menu_mobile.css);
+@import url(./__menu_authorized/header__menu_authorized.css);
+@import url(./__menu_not-authorized/header__menu_not-authorized.css);
+@import url(./__menu_is-opened/header__menu_is-opened.css);
+@import url(./__page-name-container/__page-name-container.css);
+@import url(./__page-name/__page-name.css);
+@import url(./__underline/__underline.css);
+@import url(./__title/__title.css);
+@import url(./__user/__user.css);
+@import url(./__logout-image/__logout-image.css);
+
+
+
+.header {
+  height: 80px;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(196, 196, 196, 0.5);;
+  background-color:transparent;
+  position:absolute;
+  color:white;
+}
+
+.header_black {
+  color:black;
+}
+
+
+@media screen and (min-width:321px) and (max-width:768px) {
+  .header{
+    height: 66px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .header{
+    height: 56px;
+  }
+}

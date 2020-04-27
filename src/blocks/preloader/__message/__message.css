@@ -1,0 +1,21 @@
+.preloader__message{
+  margin:0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #B6BCBF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom:80px;
+}
+
+@media screen and (max-width:768px) {
+  .preloader__message{
+    font-size: 16px;
+    bottom:24px;
+  }
+}

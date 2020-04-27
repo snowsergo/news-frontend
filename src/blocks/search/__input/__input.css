@@ -1,0 +1,22 @@
+.search__input{
+  margin:auto 24px;
+
+  width:376px;
+  height:22px;
+
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  border: none;
+  color: #1A1B22;
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+
+.search__input::placeholder {
+  color:#B6BCBF;
+}

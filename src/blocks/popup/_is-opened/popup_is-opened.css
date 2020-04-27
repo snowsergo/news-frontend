@@ -1,0 +1,15 @@
+.popup-enter.popup_is-opened {
+  display: flex;
+}
+
+.popup-registration.popup_is-opened {
+  display: flex;
+}
+
+.popup-success.popup_is-opened {
+  display: flex;
+}
+
+.popup-menu.popup_is-opened {
+  display: flex;
+}

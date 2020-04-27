@@ -1,0 +1,18 @@
+.resume__container{
+  padding-top: 120px;
+  padding-left:104px;
+}
+
+@media screen and (min-width:670px) and (max-width:1000px) {
+  .resume__container{
+    padding-top: 90px;
+    padding-left:40px;
+  }
+}
+
+@media screen and (max-width:669px) {
+  .resume__container{
+    padding-top: 64px;
+    padding-left:16px;
+  }
+}

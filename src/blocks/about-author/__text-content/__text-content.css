@@ -1,0 +1,22 @@
+.about-author__text-content{
+  
+
+  margin-left:56px;
+}
+
+@media screen and (min-width:760px) and (max-width:1200px) {
+  .about-author__text-content{
+    margin-left:32px;
+  }
+}
+@media screen and (min-width:701px) and (max-width:759px) {
+  .about-author__text-content{
+    margin-left:19px;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .about-author__text-content{
+    margin-left:0px;
+  }
+}

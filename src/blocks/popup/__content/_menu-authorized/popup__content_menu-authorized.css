@@ -1,0 +1,13 @@
+.popup__content_menu-authorized {
+  width: 320px;
+  /*min-height: 380px;*/
+  background-color:black;
+  border-radius: 16px;
+  position: relative;
+  box-sizing: border-box;
+
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top:0;
+  right:0;
+}
