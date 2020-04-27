@@ -2,6 +2,9 @@
   "name": "news-frontend",
   "version": "1.0.0",
   "description": "Обеспечивающий работу с пользователями и статьями",
+  "browserslist": [
+    "defaults"
+  ],
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist && webpack --mode production",
