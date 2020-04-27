@@ -5,9 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Сергей Ступников">
+  <meta name="description" content="Сайт демонстрирует адаптивную верстку и
+  предоставляет возможность работы с сервисом NEWS.API и базой данных написаной на express">
   <title>News</title>
   <link rel="shortcut icon" href=".././images/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="../secondary/secondary.93a805711b1574c2b0ed.css" />
+  <link rel="stylesheet" href="../secondary/secondary.7471e03dec91b42d7533.css" />
 </head>
 
 <body>
@@ -17,8 +20,7 @@
       <header class="header header_black">
         <p class="header__title">NewsExplorer</p>
 
-
-        <!---------- авторизованное меню---------------->
+        <!--авторизованное меню-->
         <div class="header__menu  header__menu_authorized  header__menu_is-opened">
           <div class="header__page-name-container">
             <a class="header__page-name header__page-name_black" href=".././">Главная</a>
@@ -28,37 +30,34 @@
             <div class="header__underline header__underline_black"></div>
           </div>
           <div class="header__page-name-container"></div>
-          <button class="button header__logout-button header__logout-button_black">
-            <div class="header__logout-container">
-              <p class="header__user">Грета</p>
-              <img class="header__logout-image" src=".././images/exit_black.png" alt="Exit">
-            </div>
+          <button class="button header__logout-button header__logout-button_black">Грета
+            <img class="header__logout-image" src=".././images/exit_black.png" alt="Exit">
           </button>
         </div>
 
-        <!---------- мобильное меню---------------->
+        <!--мобильное меню-->
         <div class="header__menu header__menu_mobile header__menu_is-opened">
-          <img class="header__menu_mobile-image button" src=".././images/menu-mobile-black.png" alt="Menu">
+          <img class="header__menu_mobile-image button" src=".././images/menu-mobile-black.png"
+            alt="Menu">
         </div>
       </header>
 
+      <!--Секция резюме-->
+      <section class="resume">
+        <div class="resume__container">
+          <h2 class="resume__title">Сохраненные статьи</h2>
+          <p class="resume__message">Грета, у вас 5 сохраненных статей</p>
+          <p class="resume__tags">По ключевым словам:
+            <span class="resume__tag resume__tag_first">Природа,</span>
 
- <!---------- Секция резюме---------------->
- <section class="resume">
-  <div class="resume__container">
-    <h2 class="resume__title">Сохраненные статьи</h2>
-    <p class="resume__message">Грета, у вас 5 сохраненных статей</p>
-    <p class="resume__tags">По ключевым словам:
-      <span class="resume__tag resume__tag_first">Природа,</span>
+            <span class="resume__tag resume__tag_second">Тайга</span>
+            и
+            <span class="resume__tag resume__tag_others">2 другим</span>
+          </p>
+        </div>
+      </section>
 
-      <span class="resume__tag resume__tag_second">Тайга</span>
-      и
-      <span class="resume__tag resume__tag_others">2 другим</span>
-    </p>
-  </div>
-</section>
-
-      <!----------секция с результатами поиска---------------->
+      <!--секция с результатами поиска-->
       <section class="results results_articles">
         <div class="cardlist">
 
@@ -129,14 +128,10 @@
             <p class="card__source">Риа</p>
           </div>
 
-
-
         </div>
 
         <button class="button results__button">Показать еще</button>
       </section>
-
-
 
       <footer class="footer">
         <p class="footer__copyright">&copy; 2020, Powered by News API</p>
@@ -146,20 +141,18 @@
             <a href="https://praktikum.yandex.ru" target="_blank" class="footer__pages page__link">Яндекс.Практикум</a>
           </div>
           <div class="footer__social">
-            <a class ="page__link" target="_blank" href="https://github.com/snowsergo/news-frontend">
+            <a class="page__link" target="_blank" href="https://github.com/snowsergo/news-frontend">
               <img class="footer__image" src=".././images/github-big.png" alt="Github">
             </a>
-            <a class ="page__link" target="_blank" href="https://facebook.com">
+            <a class="page__link" target="_blank" href="https://facebook.com">
               <img class="footer__image" src=".././images/facebook-big.png" alt="Facebook">
             </a>
           </div>
         </div>
       </footer>
 
-
-
-       <!---------- ПОПАП авторизованное меню---------------->
-       <div class="popup-menu" name="popupMenuAuth">
+      <!--ПОПАП авторизованное меню-->
+      <div class="popup-menu">
         <div class="popup__content_menu-authorized">
           <div class="menu__header">
             <p class="header__title header__title_menu">NewsExplorer</p>
@@ -167,17 +160,11 @@
           </div>
           <a href=".././" class="header__page-name_menu page__link">Главная</a>
           <a href=".././secondary/index.html" class="header__page-name_menu page__link">Сохраненные статьи</a>
-          <button class="button header__logout-button header__logout-button_menu">
-            <div class="header__logout-container">
-              <p class="header__user">Грета the User</p>
-              <img class="header__logout-image" src=".././images/exit.png" alt="Exit">
-            </div>
+          <button class="button header__logout-button header__logout-button_menu">Грета the User
+            <img class="header__logout-image" src=".././images/exit.png" alt="Exit">
           </button>
         </div>
       </div>
-
-
-
 
     </div>
   </div>
