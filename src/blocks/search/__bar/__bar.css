@@ -8,7 +8,10 @@
   flex-direction: row;
   justify-content:space-between;
   position: relative;
+}
 
+.search__bar:focus-within {
+  box-shadow: 0 0 5px;
 }
 
 @media screen and (max-width:768px) {

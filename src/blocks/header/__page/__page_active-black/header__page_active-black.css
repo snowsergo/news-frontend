@@ -1,0 +1,7 @@
+
+@media screen and (min-width:669px) {
+  .header__page_active-black{
+    color:black;
+    border-bottom:3px solid black;
+  }
+}

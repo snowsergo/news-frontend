@@ -1,18 +1,12 @@
 .card__title{
 margin:0;
-margin-left:24px;
-margin-right:24px;
 margin-top:12px;
-font-family: Roboto Slab;
+font-family: Roboto Slab, Arial, Helvetica, sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 26px;
 line-height: 30px;
-
-
 color: #1A1B22;
-
-
 display: -webkit-box;
 -webkit-box-orient: vertical;
 -webkit-line-clamp: 3;
@@ -23,9 +17,6 @@ word-wrap: break-word;
 
 @media screen and (min-width:300px) and (max-width:1000px) {
   .card__title{
-    -webkit-line-clamp: 2;
-    margin-left:16px;
-    margin-right:16px;
     font-size: 22px;
     line-height: 24px;
   }

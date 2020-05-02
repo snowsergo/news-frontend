@@ -1,0 +1,12 @@
+.wrapper__footer{
+  display:flex;
+  width:1440px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width:700px) {
+  .wrapper__footer{
+    flex-direction:column-reverse;
+    max-width: 100%;
+  }
+}

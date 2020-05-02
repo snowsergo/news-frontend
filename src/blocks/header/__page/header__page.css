@@ -1,0 +1,25 @@
+
+.header__page{
+  margin-right:34px;
+  line-height: 78px;
+  display: none;
+
+}
+
+@media screen and (max-width:768px) {
+  .header__page{
+    margin-right:16px;
+    line-height: 66px;
+  }
+}
+
+@media screen and (max-width:668px) {
+  .header__page{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 56px;
+
+  }
+}

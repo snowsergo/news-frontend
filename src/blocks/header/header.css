@@ -1,16 +1,31 @@
+@import url(./__nav/header__nav.css);
+
+@import url(./__page/header__page.css);
+@import url(./__page/__page_active/header__page_active.css);
+@import url(./__page/__page_inactive/header__page_inactive.css);
+@import url(./__page/__page_is-opened/header__page_is-opened.css);
+
+
+@import url(./__menu/header__menu.css);
+@import url(./__menu/__menu_mobile/__menu_mobile.css);
+@import url(./__menu-content/header__menu-content.css);
+@import url(./__list/header__list.css);
+@import url(./__button-container/header__button-container.css);
+@import url(./__button-container/__button-container_is-opened/header__button-container_is-opened.css);
+
 @import url(./__login-button/__login-button.css);
 @import url(./__logout-button/__logout-button.css);
-@import url(./__menu/__menu.css);
-@import url(./__menu_mobile/header__menu_mobile.css);
+@import url(./__menu-button/header__menu-button.css);
+@import url(./__menu-close-button/header__menu-close-button.css);
+
+@import url(./__mobile-header/header__mobile_header.css);
+
 @import url(./__menu_authorized/header__menu_authorized.css);
-@import url(./__menu_not-authorized/header__menu_not-authorized.css);
-@import url(./__menu_is-opened/header__menu_is-opened.css);
-@import url(./__page-name-container/__page-name-container.css);
-@import url(./__page-name/__page-name.css);
-@import url(./__underline/__underline.css);
+
+
 @import url(./__title/__title.css);
-@import url(./__user/__user.css);
-@import url(./__logout-image/__logout-image.css);
+@import url(./__title/__title_mobile/header__title_mobile.css);
+
 
 
 
@@ -19,11 +34,12 @@
   width:100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  color:white;
   border-bottom: 1px solid rgba(196, 196, 196, 0.5);;
   background-color:transparent;
   position:absolute;
-  color:white;
+
+
 }
 
 .header_black {

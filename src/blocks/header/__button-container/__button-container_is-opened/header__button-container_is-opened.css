@@ -1,0 +1,5 @@
+@media screen and (max-width:668px){
+  .header__button-container_is-opened{
+  display:block;
+  }
+}

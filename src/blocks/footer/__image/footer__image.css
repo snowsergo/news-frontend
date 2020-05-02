@@ -1,0 +1,18 @@
+@import url(./__image_tablet/footer__image_tablet.css);
+
+.footer__image {
+  width: 20px;
+  height: auto;
+  text-decoration: none;
+
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+  .footer__image {
+    display: none;
+  }
+
+  .footer__image_tablet {
+    display: block;
+  }
+}

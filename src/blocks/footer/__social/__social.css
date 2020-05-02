@@ -1,18 +1,23 @@
 .footer__social{
-
-   width:72px;
-
+  list-style: none;
   display: flex;
   flex-direction: row;
-  align-items: baseline;
-  justify-content: space-between;
 
+  justify-content: space-between;
+  margin: 0;
+  margin-left:60px;
+  padding: 0;
 }
 
 @media screen and (max-width:1000px) {
   .footer__social{
-    margin-left: auto;
-
-
+    margin-left:27px;
   }
+}
+
+@media screen and (max-width:700px){
+  .footer__social{
+    margin-left:auto;
+  }
+
 }

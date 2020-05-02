@@ -1,6 +1,6 @@
 .error-message{
     color:#FF0000;
-    font-family: Inter;
+    font-family: Inter, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
     margin:0;
@@ -9,7 +9,7 @@
     position: absolute;
     left:0;
     top: 34px;
-  
+
 }
 
 .error-message.error-message__visible{

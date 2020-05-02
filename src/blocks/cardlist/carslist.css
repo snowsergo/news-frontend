@@ -12,6 +12,7 @@
 
 @media screen and (min-width:321px) and (max-width:1000px) {
   .cardlist{
+    padding-top:32px;
     margin-left:40px;
     margin-right:40px;
   }

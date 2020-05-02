@@ -1,0 +1,20 @@
+.footer__icon{
+
+  display: flex;
+  align-items: center;
+}
+
+.footer__icon:last-child{
+  margin-left:27px;
+}
+
+@media screen and (max-width:700px){
+  .footer__icon{
+
+    align-items: start;
+  }
+
+  .footer__icon:last-child{
+    margin-left:27px;
+  }
+}

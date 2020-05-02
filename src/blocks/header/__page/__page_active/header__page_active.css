@@ -1,0 +1,13 @@
+.header__page_active{
+  color:white;
+  border-bottom:3px solid white;
+
+}
+
+
+@media screen and (max-width:668px) {
+  .header__page_active{
+    margin-right:40px;
+    border:none;
+  }
+}

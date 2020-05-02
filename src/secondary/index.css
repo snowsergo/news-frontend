@@ -1,30 +1,42 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
+
+@import url(../blocks/page/page.css);
+@import url(../blocks/page-wrapper/page-wrapper.css);
+@import url(../blocks/wrapper/wrapper.css);
+@import url(../blocks/wrapper/__header/wrapper__header.css);
+@import url(../blocks/wrapper/__footer/wrapper__footer.css);
+
 @import url(../blocks/body/body.css);
 @import url(../blocks/header/header.css);
+@import url(../blocks/header/__page/__page_black/header__page_black.css);
+@import url(../blocks/header/__page/__page_active-black/header__page_active-black.css);
+@import url(../blocks/header/__logout-button/_black/header__logout-button_black.css);
+@import url(../blocks/header/__menu-button/_black/header__menu-button_black.css);
+
 @import url(../blocks/search/search.css);
 @import url(../blocks/button/button.css);
-@import url(../blocks/preloader/preloader.css);
-@import url(../blocks/no-results/no-results.css);
+@import url(../blocks/button/button_is-opened/button_is-opened.css);
+@import url(../blocks/button/button_is-hidden/button_is-hodden.css);
 @import url(../blocks/results/results.css);
 @import url(../blocks/cardlist/carslist.css);
 @import url(../blocks/card/card.css);
-@import url(../blocks/about-author/about-author.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/resume/resume.css);
 
-.page-wrapper{
-  width:100%;
+/*
+
+.page-wrapper {
+  width: 100%;
   background: rgb(190, 190, 190);
 }
 
-
 .page {
-max-width: 1440px;
-margin: 0 auto;
-position: relative;
-font-family:'Roboto','Roboto Slab','Source Sans Pro', Arial, Helvetica, sans-serif;
+
+  margin: 0 auto;
+  position: relative;
+  font-family: 'Roboto','Roboto Slab','Source Sans Pro', Arial, Helvetica, sans-serif;
 }
 
 .page__link {
@@ -32,8 +44,45 @@ font-family:'Roboto','Roboto Slab','Source Sans Pro', Arial, Helvetica, sans-ser
   display: flex;
   height: fit-content;
   align-items: center;
+  z-index: 1;
 }
 
 .page__link:hover {
   cursor: pointer;
 }
+.wrapper{
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+
+}
+
+.wrapper__header{
+display:flex;
+  width:1440px;
+  justify-content: space-between;
+}
+
+.wrapper__footer{
+
+    display:flex;
+    width:1440px;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width:700px) {
+    .wrapper__footer{
+      flex-direction:column-reverse;
+      justify-content: end;
+      max-width: 100%;
+
+    }
+  }
+
+
+
+*/
+
+

@@ -7,6 +7,7 @@
   border-radius:10px;
   background: url(../../../images/delete.png) center no-repeat;
   background-color: white;
+  border:none;
 
 }
 .card__delete-icon:hover {
@@ -14,3 +15,7 @@
   background-color: white;
   cursor: pointer;
 }
+
+.card__delete-icon:focus {
+   outline: none;
+  }

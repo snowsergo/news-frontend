@@ -1,9 +1,11 @@
 @import url(./__copyright/__copyright.css);
-@import url(./__image/__image.css);
+@import url(./__list/footer__list.css);
+@import url(./__image/footer__image.css);
 @import url(./__links/__links.css);
 @import url(./__menu/__menu.css);
-@import url(./__pages/__pages.css);
+@import url(./__page/footer__page.css);
 @import url(./__social/__social.css);
+@import url(./__icon/footer__icon.css);
 
 .footer{
 background-color: white;
@@ -30,7 +32,7 @@ padding:30px 104px 30px 104px;
 
 @media screen and (max-width:500px) {
   .footer{
-    padding:30px 16px 30px 16px;
+    padding:20px 16px 30px 16px;
 
   }
 }

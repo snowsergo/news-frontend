@@ -8,13 +8,17 @@
   box-sizing: border-box;
   padding: 9px 0px 10px;
   margin-bottom: 31px;
-  
+
 
 }
 
+.popup__input:focus{
+  border-bottom: 1px solid black;
+  outline: 0;
+}
 
 .popup__input::placeholder{
-font-family: Inter;
+font-family: Inter, Arial, Helvetica, sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;

@@ -8,15 +8,13 @@ position: relative;
 
 @media screen and (max-width:660px) {
   .search__container{
-
-
-width: calc(100vw - 38px);
+  width: calc(100vw - 38px);
   }
 }
 
-@media screen and (min-width:769px) and (max-width:1200px) {
+@media screen and (min-width:661px) and (max-width:1200px) {
   .search__container{
-
+  width: calc(100vw - 320px);
   }
 }
 

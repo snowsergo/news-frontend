@@ -1,4 +1,4 @@
-@import url(./__image/__image.css);
+
 @import url(./__container/__container.css);
 @import url(./__title/__title.css);
 @import url(./__subtitle/__subtitle.css);
@@ -8,19 +8,20 @@
 
 
 .search {
-background-image: url(../../images/search.png);
+background-image: url(../../images/search.jpg);
+background-size:cover;
 background-position: center;
-padding-bottom:80px;
+height: 576px;
 }
 
 @media screen and (max-width:768px) {
   .search{
-    padding-bottom:48px;
+    height: 400px;
 }
 }
 
 @media screen and (max-width:500px) {
   .search{
-    padding-bottom:104px;
+    height: 536px;
 }
 }

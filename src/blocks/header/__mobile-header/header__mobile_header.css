@@ -1,0 +1,23 @@
+.header__mobile-header{
+  display:none
+  }
+
+@media screen and (max-width:668px) {
+  .header__mobile-header{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin:0;
+    border-bottom:1px solid rgba(196, 196, 196, 0.5);;
+    width:100%;
+    padding-bottom: 16px;
+    }
+    
+    .header__mobile-header_is-opened{
+      display:flex;
+    }
+}
+
+.header__mobile-header.header__mobile-header_is-hidden{
+  display:none;
+}

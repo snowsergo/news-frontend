@@ -1,0 +1,22 @@
+.header__menu {
+ display:flex;
+}
+
+
+@media screen and (min-width:669px) and (max-width:1000px) {
+  .header__menu{
+ /*   margin-right:40px; */
+  }
+}
+
+@media screen and (max-width:668px) {
+  .header__menu{
+/*    margin-right:16px;*/
+  }
+}
+
+@media screen and (max-width:668px) {
+  .header__menu{
+  }
+}
+

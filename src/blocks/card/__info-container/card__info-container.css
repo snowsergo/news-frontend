@@ -1,0 +1,13 @@
+.card__info-container{
+  padding: 20px 24px 24px 24px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (min-width:300px) and (max-width:1000px) {
+  .card__info-container{
+padding:16px 16px 16px 16px;
+  }
+}

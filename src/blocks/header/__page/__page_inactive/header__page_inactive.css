@@ -1,0 +1,10 @@
+.header__page_inactive{
+  color: #B6BCBF;
+ 
+}
+
+@media screen and (max-width:668px) {
+  .header__page_inactive{
+    color: white;
+  }
+}

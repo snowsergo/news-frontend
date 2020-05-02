@@ -1,0 +1,11 @@
+
+@media screen and (min-width:669px){
+  .header__logout-button_black{
+    color:black;
+    border:1px solid black;
+  }
+
+  .header__logout-image-container_black{
+    background-image:url(../../../../images/exit_black.png);
+  }
+}

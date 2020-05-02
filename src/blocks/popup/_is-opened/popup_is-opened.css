@@ -9,7 +9,3 @@
 .popup-success.popup_is-opened {
   display: flex;
 }
-
-.popup-menu.popup_is-opened {
-  display: flex;
-}

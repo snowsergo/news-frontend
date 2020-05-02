@@ -1,9 +1,18 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
+
+@import url(../blocks/page/page.css);
+@import url(../blocks/page-wrapper/page-wrapper.css);
+@import url(../blocks/wrapper/wrapper.css);
+@import url(../blocks/wrapper/__header/wrapper__header.css);
+@import url(../blocks/wrapper/__footer/wrapper__footer.css);
+
 @import url(../blocks/body/body.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/search/search.css);
-@import url(../blocks/button/button.css);
+
+@import url(../blocks/button/button_is-opened/button_is-opened.css);
+@import url(../blocks/button/button_is-hidden/button_is-hodden.css);
 @import url(../blocks/preloader/preloader.css);
 @import url(../blocks/no-results/no-results.css);
 @import url(../blocks/results/results.css);
@@ -12,27 +21,11 @@
 @import url(../blocks/about-author/about-author.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/popup/popup.css);
+@import url(../blocks/button/button.css);
 
 
-.page-wrapper {
-  width: 100%;
-  background: rgb(190, 190, 190);
-}
 
-.page {
-  max-width: 1440px;
-  margin: 0 auto;
-  position: relative;
-  font-family: 'Roboto','Roboto Slab','Source Sans Pro', Arial, Helvetica, sans-serif;
-}
 
-.page__link {
-  text-decoration: none;
-  display: flex;
-  height: fit-content;
-  align-items: center;
-}
 
-.page__link:hover {
-  cursor: pointer;
-}
+
+

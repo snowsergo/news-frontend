@@ -7,6 +7,7 @@
   border-radius:10px;
   background: url(../../../images/flag-normal.svg) center no-repeat;
   background-color: white;
+  border:none;
 
 }
 .card__save-icon:hover {
@@ -24,3 +25,7 @@
   background: url(../../../images/flag-marked.svg) center no-repeat;
   background-color: white;
 }
+
+.card__save-icon:focus {
+  outline: none;
+ }

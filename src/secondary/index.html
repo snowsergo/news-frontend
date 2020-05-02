@@ -17,36 +17,62 @@
   <div class="page-wrapper">
     <div class="page">
 
-      <header class="header header_black">
-        <p class="header__title">NewsExplorer</p>
+    <header class="header header_black">
+      <div class="wrapper wrapper__header">
+        <a href=".././" class="header__title header__title_black page__link ">NewsExplorer</a>
 
-        <!--авторизованное меню-->
-        <div class="header__menu  header__menu_authorized  header__menu_is-opened">
-          <div class="header__page-name-container">
-            <a class="header__page-name header__page-name_black" href=".././">Главная</a>
+        <!--header__menu_mobile  активирует затемненный фон фон у мобильного меню -->
+        <div class="header__menu header__menu_mobile">
+
+          <!--header__menu-content_mobile  активирует черное мобильное меню -->
+          <div class="header__menu-content header__menu-content_mobile">
+
+            <!--header__mobile-header_is-opened  активирует шапку мобильного меню -->
+            <div class="header__mobile-header header__mobile-header_is-opened">
+              <a class="header__title header__title_white header__title_mobile page__link ">NewsExplorer</a>
+              <button type="button" class="button header__menu-close-button"></button>
+            </div>
+
+            <!--header__nav_is-opened  активирует навигацию мобильного меню -->
+            <nav class="header__nav header__nav_is-opened">
+              <ul class="header__list">
+                <!--header__page_is-opened активирует страницу в меню -->
+                <li class="header__page header__page_inactive header__page_black  header__page_is-opened "><a class="page__link"
+                  href=".././">Главная</a></li>
+                <!--header__page_is-opened активирует страницу в меню -->
+                <li class="header__page header__page_active header__page_active-black  header__page_is-opened"><a class="page__link"
+                  href=".././secondary/index.html">Сохраненные страницы</a></li>
+              </ul>
+            </nav>
+
+            <!--header__button-container_is-opened отображает кнопкb авторизации в мобильном меню -->
+            <div class="header__button-container header__button-container_is-opened">
+
+              <!--button_is-opened отображает кнопку button_is-hidden прячет при выходе header__logout-button_black -->
+              <button type="button" class="button header__logout-button header__logout-button_black">
+                <span class="header__logout-button-container">
+                  <span class="header__logout-user-container">Грета</span>
+                  <!--header__logout-image-container_black-->
+                  <span class="header__logout-image-container header__logout-image-container_black "></span>
+                </span>
+              </button>
+
+            </div>
+
+            <!--button_is-opened отображает кнопку ГАМБУРГЕР button_is-hidden прячет -->
+            <button type="button" class="button header__menu-button header__menu_button_black"></button>
           </div>
-          <div class="header__page-name-container">
-            <a class="header__page-name header__page-name_black" href=".././secondary/index.html">Сохраненные статьи</a>
-            <div class="header__underline header__underline_black"></div>
-          </div>
-          <div class="header__page-name-container"></div>
-          <button class="button header__logout-button header__logout-button_black">Грета
-            <img class="header__logout-image" src="../<%=require('../images/exit_black.png')%>" alt="Exit">
-          </button>
         </div>
+      </div>
+    </header>
 
-        <!--мобильное меню-->
-        <div class="header__menu header__menu_mobile header__menu_is-opened">
-          <img class="header__menu_mobile-image button" src="../<%=require('../images/menu-mobile-black.png')%>"
-            alt="Menu">
-        </div>
-      </header>
-
+<main>
       <!--Секция резюме-->
       <section class="resume">
+        <div class="wrapper">
         <div class="resume__container">
-          <h2 class="resume__title">Сохраненные статьи</h2>
-          <p class="resume__message">Грета, у вас 5 сохраненных статей</p>
+          <h1 class="resume__title">Сохраненные статьи</h1>
+          <h2 class="resume__message">Грета, у вас 5 сохраненных статей</h2>
           <p class="resume__tags">По ключевым словам:
             <span class="resume__tag resume__tag_first">Природа,</span>
 
@@ -55,116 +81,169 @@
             <span class="resume__tag resume__tag_others">2 другим</span>
           </p>
         </div>
+      </div>
       </section>
 
       <!--секция с результатами поиска-->
       <section class="results results_articles">
+        <div class="wrapper">
         <div class="cardlist">
 
-          <div class="card result__card">
+
+          <div class="card">
             <div class="card__image-container">
-              <img class="card__image" src=" ../<%=require('../images/card1.png')%>" alt="Фото карточки">
+              <img class="card__image" src="../<%=require('../images/card1.jpg')%>" alt="Фото карточки" />
               <div class="card__label-container">
-                <p class="card__tag">Природа</p>
+                <p class="card__tag">Тэг</p>
                 <p class="card__tooltip card__tooltip_delete">Убрать из сохраненных</p>
-                <div class="card__delete-icon"></div>
+                <button type="button" class="card__delete-icon"></button>
               </div>
             </div>
-            <p class="card__date">3 августа, 2019</p>
-            <h3 class="card__title">Национальное достояние – парки</h3>
-            <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться
-              система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к
-              природе.</p>
+            <div class="card__info-container">
+              <p class="card__date">3 августа, 2019</p>
+              <h3 class="card__title">Национальное достояние – парки</h3>
+              <p class="card__text card__text_4-lines">
+                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                начала складываться система национальных парков – охраняемых
+                территорий, где и сегодня каждый может приобщиться к природе.
+              </p>
+
+            </div>
             <p class="card__source">Лента.ру</p>
           </div>
 
-          <div class="card result__card">
+
+
+
+          <div class="card">
             <div class="card__image-container">
-              <img class="card__image" src="../<%=require('../images/card2.png')%>" alt="Фото карточки">
+              <img class="card__image" src="../<%=require('../images/card2.jpg')%>" alt="Фото карточки" />
               <div class="card__label-container">
-                <p class="card__tag">Очень длинный тэг</p>
+                <p class="card__tag">Тэг</p>
                 <p class="card__tooltip card__tooltip_delete">Убрать из сохраненных</p>
-                <div class="card__delete-icon"></div>
+                <button type="button" class="card__delete-icon"></button>
               </div>
             </div>
-            <p class="card__date">2 августа, 2019</p>
-            <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
-            <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы
-              запечатлеть ускользающую красоту одного из местных чудес природы.</p>
+            <div class="card__info-container">
+              <p class="card__date">2 августа, 2019</p>
+              <h3 class="card__title">
+                Лесные огоньки: история одной фотографии
+              </h3>
+              <p class="card__text card__text_4-lines card__text_2-lines">
+                Фотограф отвлеклась от освещения суровой политической реальности
+                Мексики, чтобы запечатлеть ускользающую красоту одного из
+                местных чудес природы.
+              </p>
+
+            </div>
             <p class="card__source">Медуза</p>
           </div>
 
-          <div class="card result__card">
+
+
+
+
+          <div class="card">
             <div class="card__image-container">
-              <img class="card__image" src="../<%=require('../images/card3.png')%>" alt="Фото карточки">
+              <img class="card__image" src="../<%=require('../images/card3.jpg')%>" alt="Фото карточки" />
               <div class="card__label-container">
-                <p class="card__tooltip">Убрать из сохраненных</p>
-                <div class="card__delete-icon"></div>
+                <p class="card__tag">Тэг</p>
+                <p class="card__tooltip card__tooltip_delete">Убрать из сохраненных</p>
+                <button type="button" class="card__delete-icon"></button>
               </div>
             </div>
-            <p class="card__date">2 августа, 2019</p>
-            <h3 class="card__title">Флюгегегхайнен</h3>
-            <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
-              необходимости
-              их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу,
-              где</p>
+            <div class="card__info-container">
+              <p class="card__date">2 августа, 2019</p>
+              <h3 class="card__title">Флюгегегхайне нdfsdfsd fsd sdgasdasd</h3>
+              <p class="card__text card__text_4-lines">
+                Знаменитый фотограф снимает первозданные леса России, чтобы
+                рассказать о необходимости их сохранения. В этот раз он
+                отправился в Двинско-Пинежскую тайгу, где
+              </p>
+
+            </div>
             <p class="card__source">Риа</p>
           </div>
 
-          <div class="card result__card">
+          <div class="card">
             <div class="card__image-container">
-              <img class="card__image" src="../<%=require('../images/card3.png')%>" alt="Фото карточки">
+              <img class="card__image" src="../<%=require('../images/card4.jpg')%>" alt="Фото карточки" />
               <div class="card__label-container">
-                <p class="card__tooltip">Убрать из сохраненных</p>
-                <div class="card__delete-icon"></div>
+                <p class="card__tag">Тэг</p>
+                <p class="card__tooltip card__tooltip_delete">Убрать из сохраненных</p>
+                <button type="button" class="card__delete-icon"></button>
               </div>
             </div>
-            <p class="card__date">2 августа, 2019</p>
-            <h3 class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
-              необходимости
-              их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу,
-              где</p>
+            <div class="card__info-container">
+              <p class="card__date">2 августа, 2019</p>
+              <h3 class="card__title">
+                «Первозданная тайга»: новый фотопроект Игоря Шпиленка
+              </h3>
+              <p class="card__text card__text_4-lines card__text_2-lines">
+                Знаменитый фотограф снимает первозданные леса России, чтобы
+                рассказать о необходимости их сохранения. В этот раз он
+                отправился в Двинско-Пинежскую тайгу, где
+              </p>
+
+            </div>
             <p class="card__source">Риа</p>
           </div>
 
+          <div class="card">
+            <div class="card__image-container">
+              <img class="card__image" src="../<%=require('../images/card5.jpg')%>" alt="Фото карточки" />
+              <div class="card__label-container">
+                <p class="card__tag">Тэг</p>
+                <p class="card__tooltip card__tooltip_delete">Убрать из сохраненных</p>
+                <button type="button" class="card__delete-icon"></button>
+              </div>
+            </div>
+            <div class="card__info-container">
+              <p class="card__date">2 августа, 2019</p>
+              <h3 class="card__title">Лесные asfsdfsdf asdasfasfsadvdfgdfgf</h3>
+              <p class="card__text card__text_4-lines ">Фотограф Знаменитый фотограф снимает первозданные леса России,
+                чтобы
+                рассказать о необходимости их сохранения. В этот раз он
+                отправился в Двинско-Пинежскую тайгу, где</p>
+
+            </div>
+            <p class="card__source">Медуза</p>
+          </div>
         </div>
-
-        <button class="button results__button">Показать еще</button>
+      </div>
       </section>
 
       <footer class="footer">
-        <p class="footer__copyright">&copy; 2020, Powered by News API</p>
-        <div class="footer__links">
-          <div class="footer__menu">
-            <a href=".././" class="footer__pages page__link">Главная</a>
-            <a href="https://praktikum.yandex.ru" target="_blank" class="footer__pages page__link">Яндекс.Практикум</a>
-          </div>
-          <div class="footer__social">
-            <a class="page__link" target="_blank" href="https://github.com/snowsergo/news-frontend">
-              <img class="footer__image" src="../<%=require('../images/github-big.png')%>" alt="Github">
-            </a>
-            <a class="page__link" target="_blank" href="https://facebook.com">
-              <img class="footer__image" src="../<%=require('../images/facebook-big.png')%>" alt="Facebook">
-            </a>
+        <div class="wrapper wrapper__footer">
+          <p class="footer__copyright">&copy; 2020, Powered by News API</p>
+          <div class="footer__links">
+              <nav class="footer__menu">
+                <ul class="footer__list">
+                  <li class="footer__page"><a href="./index.html" class="page__link">Главная</a></li>
+                  <li class="footer__page"><a href="https://praktikum.yandex.ru" target="_blank"
+                      class="page__link">Яндекс.Практикум</a></li>
+                </ul>
+              </nav>
+            <ul class="footer__social">
+              <li class="footer__icon">
+                <a class="page__link" target="_blank" href="https://github.com/snowsergo/news-frontend">
+                  <img class="footer__image" src="<%=require('../images/github.png')%>" alt="Github" />
+                  <img class="footer__image footer__image_tablet" src="<%=require('../images/github.png')%>"
+                    alt="Github" />
+                </a>
+              </li>
+              <li class="footer__icon">
+                <a class="page__link" target="_blank" href="https://facebook.com">
+                  <img class="footer__image" src="<%=require('../images/facebook.png')%>" alt="Facebook" />
+                  <img class="footer__image footer__image_tablet" src="<%=require('../images/facebook-tablet.png')%>"
+                    alt="Facebook" />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </footer>
-
-      <!--ПОПАП авторизованное меню-->
-      <div class="popup-menu">
-        <div class="popup__content_menu-authorized">
-          <div class="menu__header">
-            <p class="header__title header__title_menu">NewsExplorer</p>
-            <img src="../<%=require('../images/close.svg')%>" alt="close" id="menu-close" class="popup__close_menu">
-          </div>
-          <a href=".././" class="header__page-name_menu page__link">Главная</a>
-          <a href=".././secondary/index.html" class="header__page-name_menu page__link">Сохраненные статьи</a>
-          <button class="button header__logout-button header__logout-button_menu">Грета the User
-            <img class="header__logout-image" src="../<%=require('../images/exit.png')%>" alt="Exit">
-          </button>
-        </div>
-      </div>
+    </main>
 
     </div>
   </div>

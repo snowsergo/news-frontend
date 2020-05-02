@@ -1,36 +1,86 @@
-@import url(./__logout-container/__logout-container.css);
 
 .header__logout-button{
-  color: white;
-  border: 1px solid #FFFFFF;
-  border-radius: 100px;
-  font-family: Roboto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
+  border-radius: 100px;
+  background-color:transparent;
   height: 48px;
-  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  padding-left:19px;
+  padding-right:19px;
+  color:white;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left:14px;
-  padding-right:10px;
-}
-.header__logout-button_black{
-  color: black;
-  border: 1px solid black;
+  align-items:center;
+  justify-content: space-around;
+  width:fit-content;
+  z-index: 1;
 }
 
-@media screen and (max-width:768px) {
+.header__logout-button:hover{
+  cursor: pointer;
+
+}
+.header__logout-button:active{
+  border:1px solid rgb(190, 190, 190);
+}
+
+
+.header__logout-button-container{
+  display: flex;
+  height:24px;
+  width:max-content;
+  align-items: center;
+}
+
+
+
+.header__logout-image-container{
+  background-image:url(../../../images/exit.png);
+  margin-left:8px;
+  width:24px;
+  height:24px;
+  background-repeat: no-repeat;
+  background-position: center right 0px;
+  
+
+
+}
+
+.header__logout-user-container{
+  max-width: 160px;
+  word-wrap: break-word;
+  max-height: inherit;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+
+}
+
+
+
+
+@media screen and (min-width:669px) and (max-width:768px)  {
   .header__logout-button{
     height: 40px;
+    font-size: 16px;
   }
-  .header__logout-button_menu{
-    height: 56px;
-    width:288px;
-    margin:22px auto 24px;
-    align-items: center;
   }
 
-}
+@media screen and (max-width:668px) {
+  .header__logout-button{
+    height: 56px;
+    margin:0;
+    width:288px;
+    background-position:center right 80px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+
+  }
+  }

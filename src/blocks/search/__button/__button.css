@@ -2,7 +2,7 @@
   color: white;
   border-radius: 100px;
   border:none;
-  font-family: Roboto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -14,6 +14,7 @@
 }
 .search__button:hover{
   cursor: pointer;
+  background-color:#347EFF;;
 }
 
 .search__button:active{

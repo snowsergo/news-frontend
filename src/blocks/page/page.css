@@ -1,0 +1,7 @@
+@import url(./__link/page__link.css);
+
+.page {
+  margin: 0 auto;
+  position: relative;
+  font-family: 'Roboto','Roboto Slab','Source Sans Pro', Arial, Helvetica, sans-serif;
+}
