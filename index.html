@@ -10,7 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>News</title>
   <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="main/main.f931830e0a52c1ac1103.css" />
+  <link rel="stylesheet" href="main/main.c7d4d1e6d8e835491281.css" />
 </head>
 
 <body>
@@ -23,19 +23,19 @@
           <a class="header__title header__title_white page__link ">NewsExplorer</a>
 
           <!--header__menu_mobile  активирует затемненный фон фон у мобильного меню -->
-          <div class="header__menu header__menu_mobile">
+          <div class="header__menu">
 
             <!--header__menu-content_mobile  активирует черное мобильное меню -->
-            <div class="header__menu-content header__menu-content_mobile">
+            <div class="header__menu-content">
 
               <!--header__mobile-header_is-opened  активирует шапку мобильного меню -->
-              <div class="header__mobile-header header__mobile-header_is-opened">
+              <div class="header__mobile-header">
                 <a class="header__title header__title_mobile header__title_white page__link ">NewsExplorer</a>
                 <button type="button" class="button header__menu-close-button"></button>
               </div>
 
               <!--header__nav_is-opened  активирует навигацию мобильного меню -->
-              <nav class="header__nav  header__nav_is-opened">
+              <nav class="header__nav">
                 <ul class="header__list">
                   <!--header__page_is-opened активирует страницу в меню -->
                   <li class="header__page header__page_active header__page_is-opened "><a class="page__link"
@@ -47,7 +47,7 @@
               </nav>
 
               <!--header__button-container_is-opened отображает кнопки авторизации в мобильном меню -->
-             <div class="header__button-container header__button-container_is-opened">
+             <div class="header__button-container">
 
                 <!--button_is-opened отображает кнопку button_is-hidden прячет при выходе -->
                 <button type="button" class="button header__logout-button">
@@ -337,7 +337,7 @@
       </div>
 
       <!--ПОПАП регистрация popup_is-opened чтобы открыть-->
-      <div class="popup popup-registration">
+      <div class="popup popup-registration popup_is-opened">
         <div class="popup__content">
           <button type="button" id="registration-close" class="popup__close"></button>
           <h3 class="popup__title">Регистрация</h3>
@@ -356,7 +356,9 @@
             <div class="popup__input-container">
               <input type="text" id="name" required minlength="8" class="popup__input" placeholder="Введите своё имя" />
               <span class="error-message">Name_validation_message</span>
+              <span class="error-message error-message_user">Такой пользователь уже есть</span>
             </div>
+
             <button disabled type="submit" class="button popup__enter-button">
               Зарегистрироваться
             </button>
