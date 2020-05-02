@@ -8,8 +8,7 @@
   box-sizing: border-box;
   padding: 9px 0px 10px;
   margin-bottom: 31px;
-
-
+  position:relative;
 }
 
 .popup__input:focus{

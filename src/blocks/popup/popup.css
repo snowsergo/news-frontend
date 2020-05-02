@@ -7,6 +7,7 @@
 @import url(./__button/popup__button.css);
 @import url(./_is-opened/popup_is-opened.css);
 @import url(./__error-message/error-message.css);
+@import url(./__error-message/__user/error-message__user.css);
 @import url(./popup-enter/popup-enter.css);
 @import url(./popup-registration/popup-registration.css);
 @import url(./popup-success/popup-success.css);
