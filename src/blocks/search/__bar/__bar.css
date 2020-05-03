@@ -11,7 +11,7 @@
 }
 
 .search__bar:focus-within {
-  box-shadow: 0 0 5px;
+  box-shadow: 0 0 30px;
 }
 
 @media screen and (max-width:768px) {

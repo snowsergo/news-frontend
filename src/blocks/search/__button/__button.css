@@ -10,6 +10,7 @@
   width:168px;
   height: 100%;
   background-color: #2F71E5;;
+  padding:0;
 
 }
 .search__button:hover{
@@ -20,6 +21,13 @@
 .search__button:active{
   background-color:#2A65CC;
 }
+
+@media screen and (min-width:501px)  and (max-width:768px){
+  .search__button{
+    width:160px;
+}
+}
+
 
 @media screen and (max-width:500px) {
   .search__button{
