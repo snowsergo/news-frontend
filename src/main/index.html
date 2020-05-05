@@ -50,7 +50,7 @@
              <div class="header__button-container">
 
                 <!--button_is-opened отображает кнопку button_is-hidden прячет при выходе -->
-                <button type="button" class="button header__logout-button">
+                <button type="button" class="button header__logout-button button_is-hidden">
                   <span class="header__logout-button-container">
                     <span class="header__logout-user-container">Грета</span>
                     <span class="header__logout-image-container"></span>
@@ -58,7 +58,7 @@
                 </button>
 
                 <!--button_is-opened отображает кнопку button_is-hidden прячет при успешной авторизации -->
-                <button type="button" class="button header__login-button  button_is-hidden ">Авторизоваться</button>
+                <button type="button" class="button header__login-button">Авторизоваться</button>
               </div>
 
               <!--button_is-opened отображает кнопку ГАМБУРГЕР button_is-hidden прячет -->
@@ -319,18 +319,18 @@
           <form class="popup__form" name="enter">
             <h4 class="popup__subtitle">Email</h4>
             <div class="popup__input-container">
-              <input type="email" required class="popup__input" placeholder="Введите почту" />
-              <span class="error-message">Email_validation_message</span>
+              <input type="email" id="emailenter" required class="popup__input" placeholder="Введите почту" />
+              <span id="error-emailenter" class="error-message">Email_validation_message</span>
             </div>
             <h4 class="popup__subtitle">Пароль</h4>
             <div class="popup__input-container">
-              <input type="password" required minlength="8" class="popup__input" placeholder="Введите пароль" />
-              <span class="error-message">Password_validation_message</span>
+              <input type="password" id="passwordenter" required minlength="8" class="popup__input" placeholder="Введите пароль" />
+              <span  id="error-passwordenter"class="error-message">Password_validation_message</span>
             </div>
-            <button disabled type="submit" class="button popup__enter-button">Войти</button>
+            <button disabled type="submit" class="button popup__button popup__enter-button">Войти</button>
             <div class="popup__link-container">
               <p class="popup__message">или</p>
-              <a class="popup__link">Зарегистрироваться</a>
+              <a class="popup__link popup__link_registration">Зарегистрироваться</a>
             </div>
           </form>
         </div>
@@ -341,30 +341,30 @@
         <div class="popup__content">
           <button type="button" id="registration-close" class="popup__close"></button>
           <h3 class="popup__title">Регистрация</h3>
-          <form class="popup__form" name="enter">
+          <form class="popup__form" name="registration">
             <h4 class="popup__subtitle">Email</h4>
             <div class="popup__input-container">
-              <input type="email" required class="popup__input" placeholder="Введите почту" />
-              <span class="error-message">Email_validation_message</span>
+              <input type="email" id="emailregistration" required class="popup__input" placeholder="Введите почту" />
+              <span id="error-emailregistration" class="error-message"></span>
             </div>
             <h4 class="popup__subtitle">Пароль</h4>
             <div class="popup__input-container">
-              <input type="password" required minlength="8" class="popup__input" placeholder="Введите пароль" />
-              <span class="error-message">Password_validation_message</span>
+              <input type="password" id="passwordregistration"required minlength="8" class="popup__input" placeholder="Введите пароль" />
+              <span id="error-passwordregistration" class="error-message">Password_validation_message</span>
             </div>
             <h4 class="popup__subtitle">Имя</h4>
             <div class="popup__input-container">
-              <input type="text" id="name" required minlength="8" class="popup__input" placeholder="Введите своё имя" />
-              <span class="error-message">Name_validation_message</span>
-              <span class="error-message error-message_user">Такой пользователь уже есть</span>
+              <input type="text" id="nameregistration" required minlength="8" class="popup__input" placeholder="Введите своё имя" />
+              <span id="error-nameregistration" class="error-message">Name_validation_message</span>
+              <span id="error-userregistration" class="error-message error-message_user">Такой пользователь уже есть</span>
             </div>
 
-            <button disabled type="submit" class="button popup__enter-button">
+            <button disabled type="submit" class="button popup__button popup__registration-button">
               Зарегистрироваться
             </button>
             <div class="popup__link-container">
               <p class="popup__message">или</p>
-              <a class="popup__link">Войти</a>
+              <a class="popup__link popup__link_enter">Войти</a>
             </div>
           </form>
         </div>

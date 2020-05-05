@@ -1,5 +1,4 @@
 
-
 .error-message{
     color:#FF0000;
     font-family: Inter, Arial, Helvetica, sans-serif;
@@ -11,6 +10,7 @@
     position: absolute;
     left:0;
     top: 34px;
+    display:none
 }
 
 

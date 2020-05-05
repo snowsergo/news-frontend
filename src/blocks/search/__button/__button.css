@@ -13,9 +13,14 @@
   padding:0;
 
 }
+
+.search__button:focus{
+  border:2px solid rgb(13, 1, 184);
+}
+
 .search__button:hover{
   cursor: pointer;
-  background-color:#347EFF;;
+  background-color:#347EFF;
 }
 
 .search__button:active{
