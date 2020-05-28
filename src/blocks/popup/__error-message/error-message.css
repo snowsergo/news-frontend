@@ -10,9 +10,25 @@
     position: absolute;
     left:0;
     top: 34px;
-    display:none
+    display:none;
 }
 
+.error-message_user-registration{
+  text-align: center;
+  color:#FF0000;
+  position: initial;
+  margin:0;
+  display: none;
+  word-wrap:break-word;
+}
+.error-message_user-enter{
+  text-align: center;
+  color:#FF0000;
+  position: initial;
+  margin:0;
+  display: none;
+  word-wrap:break-word;
+}
 
 .error-message.error-message__visible{
     display:block;

@@ -8,6 +8,7 @@
   background: url(../../../images/flag-normal.svg) center no-repeat;
   background-color: white;
   border:none;
+  box-shadow: 0 0 3px;
 
 }
 .card__save-icon:hover {

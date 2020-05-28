@@ -12,10 +12,24 @@
     border: none;
 }
 
+.popup__button:hover{
+  cursor: pointer;
+}
+
 
 .popup__button.popup__button-is-active {
-  background-color: black;
+  background: #2F71E5;
   color: white;
+}
 
+.popup__button.popup__button-is-active:active {
+  background-color:#2A65CC;
+}
 
+.popup__button.popup__button-is-active:hover {
+  background-color:#347EFF;
+}
+
+.popup__button.popup__button-is-active:focus{
+  border:2px solid rgb(13, 1, 184);
 }

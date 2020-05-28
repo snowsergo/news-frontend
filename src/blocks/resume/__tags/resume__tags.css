@@ -1,14 +1,16 @@
 .resume__tags{
   margin:0;
   margin-top:30px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1A1B22;
+}
 
-
-font-family: Roboto, Arial, Helvetica, sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-color: #1A1B22;
+.resume__tags_none{
+  display: none;
 }
 
 @media screen and (min-width:670px) and (max-width:1000px) {

@@ -15,11 +15,18 @@ font-family: Roboto, Arial, Helvetica, sans-serif;
 font-style: normal;
 font-weight: 500;
 
-display: flex;
+display: none;
 justify-content: center;
 align-items: center;
 color: #000000;
+box-shadow: 0 0 3px;
 }
+
+
+.card__tooltip_is-opened{
+  display:flex;
+}
+
 .card__tooltip_disable{
   display:none;
 }

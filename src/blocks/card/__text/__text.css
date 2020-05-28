@@ -17,8 +17,7 @@ display: -webkit-box;
 
 overflow: hidden;
 word-wrap: break-word;
-
-
+-webkit-line-clamp: 4;
 
 }
 
@@ -28,8 +27,17 @@ word-wrap: break-word;
     margin-top:10px;
   }
 }
+/*
 @media screen and (max-width:499px) {
   .card__text_2-lines{
+    -webkit-line-clamp: 2;
+  }
+}
+
+
+*/
+@media screen and (max-width:499px) {
+  .card__text{
     -webkit-line-clamp: 2;
   }
 }

@@ -8,7 +8,7 @@
   background: url(../../../images/delete.png) center no-repeat;
   background-color: white;
   border:none;
-
+  box-shadow: 0 0 3px;
 }
 .card__delete-icon:hover {
   background: url(../../../images/delete_active.png) center no-repeat;

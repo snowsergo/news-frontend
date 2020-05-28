@@ -1,3 +1,4 @@
+@import url(./__link/card__link.css);
 @import url(./__image-container/__image-container.css);
 @import url(./__image/__image.css);
 @import url(./__label-container/__label-container.css);
@@ -17,6 +18,7 @@ overflow:hidden;
 position: relative;
 height: 576px;
 border-radius: 16px;
+box-shadow: 0 0 2px;
 }
 
 @media screen and (min-width:700px) and (max-width:800px) {
@@ -64,7 +66,8 @@ border-radius: 16px;
 
 @media screen and (min-width:641px) and (max-width:760px) {
   .card{
-    height: 510px;
+    /*height: 510px;*/
+    height: 470px;
 }
 }
 
