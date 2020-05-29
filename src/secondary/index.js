@@ -19,6 +19,7 @@ const logoutButton = document.querySelector(".header__logout-button");
 mainApi.setUser();
 headerObj.isLoggedin = localStorage.getItem("isLoggedin");
 headerObj.userName = localStorage.getItem("userName");
+headerObj.page = "secondary";
 
 // загрузка первоначальных карточек
 mainApi.getArticles(server)
@@ -32,7 +33,7 @@ mainApi.getArticles(server)
      // составляем резюме
     results.classList.add("results_is-opened");
     for (let obj of cardlistObj.getRenderArraySaved(res.data)) {
-      cardlistObj.renderSaved(obj); // отрисовываем секцию с карточками
+      cardlistObj.renderAll(obj, headerObj.page); // отрисовываем секцию с карточками
     }
     resumeObj.count(cardlistObj.articlesSaved);
   }

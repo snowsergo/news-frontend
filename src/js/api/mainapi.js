@@ -38,6 +38,7 @@ export default class MainApi {
     return fetch(`${server}/signin`, {
       method: "POST",
       credentials: "include",
+      // mode:'no-cors',
       headers: {
         "Content-Type": "application/json",
       },

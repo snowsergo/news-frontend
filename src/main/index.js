@@ -45,6 +45,8 @@ if (localStorage.getItem("isLoggedin") === "true") {
   logoutButton.addEventListener("click", logout);
 }
 
+//headerObj.page="main";
+
 // регистрация нового пользователя
 function signup(event) {
   event.preventDefault();
@@ -124,7 +126,7 @@ function getNews(event) {
   page.removeEventListener("mouseover", handleTooltip);
   page.removeEventListener("mouseout", handleTooltip);
   page.removeEventListener("click", saveCard);
-  
+
   event.preventDefault();
   preloaderObj.renderLoading(true);
   preloaderObj.nothingFound(false);
@@ -162,7 +164,7 @@ function getNews(event) {
         }
       } else {
         for (let i = 0; i < 3; i++) {
-          cardlistObj.render(card.create(result[0]));
+          cardlistObj.renderAll(card.create(result[0]), headerObj.page);
           result.shift(); // удаляем отрисованный элемен из массива
         }
         preloaderObj.renderButton(true); //отображаем кнопку
@@ -181,7 +183,7 @@ function getNews(event) {
 // отрисовка по 3 карточки пока не закончатся
 function displayCards() {
   for (let i = 0; i < 3; i++) {
-    cardlistObj.render(card.create(cardlistObj.articlesLeft[0]));
+    cardlistObj.renderAll(card.create(cardlistObj.articlesLeft[0]),headerObj.page);
     cardlistObj.articlesLeft.shift(); // удаляем отрисованный элемен из массива
     if (cardlistObj.articlesLeft == 0) {
       preloaderObj.renderButton(false);

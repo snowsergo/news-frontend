@@ -1,6 +1,6 @@
 export default class Header {
   constructor() {
-    this.Page = false;
+    this.page = false;
     this.MobileMenuIsOpen = false;  //статус мобильного меню
     this.isLoggedin = false;
     this.userName = "";
@@ -18,6 +18,7 @@ export default class Header {
   }
 
   initialRender() {
+    this.page="main";
     if (localStorage.getItem("isLoggedin") === 'true') {
       // делаем страницу залогиненого пользователя
       this.isLoggedin = true;
