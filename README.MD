@@ -7,7 +7,7 @@
 1.1.0
 
 ## Ссылка на сайт
-[snowsergo-news.tk](snowsergo-news.tk)
+[http://snowsergo-news.tk](http://snowsergo-news.tk)
 
 ## Описание работы главной страницы:
 Вход пользователя по нажатю на кнопку АВТОРИЗАЦИЯ.
