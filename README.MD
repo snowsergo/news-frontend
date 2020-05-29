@@ -6,8 +6,8 @@
 ## Текущая версия
 1.1.0
 
-## Ссылка на gh pages
-[https://snowsergo.github.io/news-frontend](https://snowsergo.github.io/news-frontend)
+## Ссылка на сайт
+[https://snowsergo-news.tk](https://snowsergo-news.tk)
 
 ## Описание работы главной страницы:
 Вход пользователя по нажатю на кнопку АВТОРИЗАЦИЯ.
@@ -33,13 +33,25 @@
 ## Установка проекта
 
 Скопируйте проект на компьютер:
-
 ```
 git clone https://github.com/snowsergo/news-frontend.git
 ```
-
 Установите зависимости проекта:
-
 ```
 npm i
 ```
+Настройте отправку запросов на http://localhost:3000 в файле server-info.js
+
+
+
+Скопируйте проект бэкенда на компьютер:
+```
+git clone https://github.com/snowsergo/news-backend.git
+```
+Установите зависимости проекта:
+```
+npm i
+```
+Настройте cors на http://localhost:8080 в файле app.js
+
+
