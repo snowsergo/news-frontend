@@ -10,7 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>News</title>
   <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="main/main.6664b74014774efd6631.css" />
+  <link rel="stylesheet" href="main/main.a879c15f50c66712dd91.css" />
 </head>
 
 <body>
@@ -41,13 +41,13 @@
                   <li class="header__page header__page_active header__page_is-opened "><a class="page__link"
                       href="./index.html">Главная</a></li>
                   <!--header__page_is-opened активирует страницу в меню -->
-                  <li class="header__page header__page_inactive header__page_is-opened"><a class="page__link"
-                      href="./secondary">Сохраненные страницы</a></li>
+                  <li class="header__page header__page_inactive"><a class="page__link" href="./secondary">Сохраненные
+                      страницы</a></li>
                 </ul>
               </nav>
 
               <!--header__button-container_is-opened отображает кнопки авторизации в мобильном меню -->
-             <div class="header__button-container">
+              <div class="header__button-container">
 
                 <!--button_is-opened отображает кнопку button_is-hidden прячет при выходе -->
                 <button type="button" class="button header__logout-button button_is-hidden">
@@ -79,22 +79,21 @@
                 Находите самые свежие статьи на любую тему и сохраняйте в своём
                 личном кабинете
               </p>
-              <form class="search__bar">
-                <input type="search" id="theme"  class="search__input" required
-                  placeholder="Введите тему новости"/>
+              <form class="search__bar" name="search">
+                <input type="search" id="theme" class="search__input" required placeholder="Введите тему новости" />
                 <button type="submit" class="button search__button">Искать</button>
               </form>
             </div>
           </div>
         </section>
 
-        <!--прелоадер-->
+        <!--прелоадер  preloader_is-opened чтобы появился-->
         <section class="preloader">
           <i class="preloader__circle-preloader"></i>
           <h2 class="preloader__message">Идет поиск новостей...</h2>
         </section>
 
-        <!--ничего не найдено-->
+        <!--ничего не найдено no-results_is-opened-->
         <section class="no-results">
           <div class="wrapper">
             <img class="no-results__image" src="./images/not-found_v1.png" alt="Not found" />
@@ -107,20 +106,23 @@
 
 
 
-        <!--секция с результатами поиска-->
+        <!--секция с результатами поиска  results_is-opened-->
         <section class="results">
           <div class="wrapper">
             <h2 class="results__title">Результаты поиска</h2>
             <div class="cardlist">
 
 
+
+<!--
               <div class="card">
+                <div class="card__label-container">
+                  <p class="card__tooltip card__tooltip_save">Войдите, чтобы сохранять статьи</p>
+                  <button type="button" class="card__save-icon"></button>
+                </div>
+                  <a class="card__link" target="_blank" href="https://github.com/snowsergo/news-frontend">
                 <div class="card__image-container">
-                  <img class="card__image" src="./images/card1.jpg" alt="Фото карточки" />
-                  <div class="card__label-container">
-                    <p class="card__tooltip card__tooltip_save">Войдите, чтобы сохранять статьи</p>
-                    <button type="button" class="card__save-icon"></button>
-                  </div>
+                  <img class="card__image" src="https://l-stat.livejournal.net/img/sign.png">
                 </div>
                 <div class="card__info-container">
                   <p class="card__date">3 августа, 2019</p>
@@ -132,11 +134,56 @@
                   </p>
                 </div>
                 <p class="card__source">Лента.ру</p>
+              </a>
+              </div>
+
+              <div class="card">
+                <div class="card__label-container">
+                  <p class="card__tooltip card__tooltip_save">Войдите, чтобы сохранять статьи</p>
+                  <button type="button" class="card__save-icon"></button>
+                </div>
+                  <a class="card__link" target="_blank" href="https://github.com/snowsergo/news-frontend">
+                <div class="card__image-container">
+                  <img class="card__image" src="https://cdn.jpg.wtf/futurico/de/1b/1486567787-de1b0d310ac77d4aa9be167a7d64fb80.jpeg">
+                </div>
+                <div class="card__info-container">
+                  <p class="card__date">3 августа, 2019</p>
+                  <h3 class="card__title">Национальное достояние – парки</h3>
+                  <p class="card__text card__text_4-lines">
+                    В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                    начала складываться система национальных парков – охраняемых
+                    территорий, где и сегодня каждый может приобщиться к природе.
+                  </p>
+                </div>
+                <p class="card__source">Лента.ру</p>
+              </a>
               </div>
 
 
+              <div class="card">
+                <div class="card__label-container">
+                  <p class="card__tooltip card__tooltip_save">Войдите, чтобы сохранять статьи</p>
+                  <button type="button" class="card__save-icon"></button>
+                </div>
+                  <a class="card__link" target="_blank" href="https://github.com/snowsergo/news-frontend">
+                <div class="card__image-container">
+                  <img class="card__image" src="https://icdn.lenta.ru/images/2020/05/19/15/20200519150113337/detail_fcb75d488f8f98efac9f3ffa7281086f.jpg">
+                </div>
+                <div class="card__info-container">
+                  <p class="card__date">3 августа, 2019</p>
+                  <h3 class="card__title">Национальное достояние – парки</h3>
+                  <p class="card__text card__text_4-lines">
+                    В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                    начала складываться система национальных парков – охраняемых
+                    территорий, где и сегодня каждый может приобщиться к природе.
+                  </p>
+                </div>
+                <p class="card__source">Лента.ру</p>
+              </a>
+              </div>
+-->
 
-
+<!--
               <div class="card">
                 <div class="card__image-container">
                   <img class="card__image" src="./images/card2.jpg" alt="Фото карточки" />
@@ -158,11 +205,11 @@
                 </div>
                 <p class="card__source">Медуза</p>
               </div>
+-->
 
 
 
-
-
+              <!--
               <div class="card">
                 <div class="card__image-container">
                   <img class="card__image" src="./images/card3.jpg" alt="Фото карточки" />
@@ -184,9 +231,9 @@
                 </div>
                 <p class="card__source">Риа</p>
               </div>
+-->
 
-
-
+              <!--
               <div class="card">
                 <div class="card__image-container">
                   <img class="card__image" src="./images/card4.jpg" alt="Фото карточки" />
@@ -210,9 +257,9 @@
                 </div>
                 <p class="card__source">Риа</p>
               </div>
+-->
 
-
-
+              <!--
               <div class="card">
                 <div class="card__image-container">
                   <img class="card__image" src="./images/card5.jpg" alt="Фото карточки" />
@@ -232,8 +279,10 @@
                 </div>
                 <p class="card__source">Медуза</p>
               </div>
-            </div>
+-->
 
+            </div>
+            <!--.results__button_is-opened чтобы появилась-->
             <button type="button" class="button results__button">Показать еще</button>
           </div>
         </section>
@@ -244,21 +293,22 @@
             <div class="about-author__container">
               <div class="about-author__image-container">
                 <picture>
-                  <source srcset="./images/me.jpg" class="about-author__image" media="(max-width: 768px)">
-                  <img class="about-author__image" src="./images/author.jpg" alt="Фото автора" />
+                  <source srcset="./images/me.jpg" class="about-author__image"
+                    media="(max-width: 768px)">
+                  <img class="about-author__image" src="./images/me2.jpg" alt="Фото автора" />
                 </picture>
 
               </div>
               <div class="about-author__text-content">
                 <h4 class="about-author__title">Об авторе</h4>
                 <p class="about-author__quote">
-                  Это блок с описанием автора проекта. Здесь следует указать, как
-                  вас зовут, чем вы занимаетесь, какими технологиями разработки
-                  владеете.
+                  Меня зовут Сергей. Я начал заниматься веб разработкой относительно недавно.
+                  Владею HTML, CSS, JavaScript. Разрабатывал серверную часть на Node.JS и Express.
+                  В качестве сборщика использую Webpack, контроль версий осуществляю в Git.
                 </p>
                 <p class="about-author__quote">
-                  Также можно рассказать о процессе обучения в Практикуме, чему вы
-                  тут научились, и чем можете помочь потенциальным заказчикам.
+                  Обучение программированию проходил в сервисе Яндекс.Практикум.
+                  В настоящее время изучаю React.
                 </p>
               </div>
             </div>
@@ -276,13 +326,13 @@
 
 
 
-              <nav class="footer__menu">
-                <ul class="footer__list">
-                  <li class="footer__page"><a href="./index.html" class="page__link">Главная</a></li>
-                  <li class="footer__page"><a href="https://praktikum.yandex.ru" target="_blank"
-                      class="page__link">Яндекс.Практикум</a></li>
-                </ul>
-              </nav>
+            <nav class="footer__menu">
+              <ul class="footer__list">
+                <li class="footer__page"><a href="./index.html" class="page__link">Главная</a></li>
+                <li class="footer__page"><a href="https://praktikum.yandex.ru" target="_blank"
+                    class="page__link">Яндекс.Практикум</a></li>
+              </ul>
+            </nav>
 
 
 
@@ -324,9 +374,11 @@
             </div>
             <h4 class="popup__subtitle">Пароль</h4>
             <div class="popup__input-container">
-              <input type="password" id="passwordenter" required minlength="8" class="popup__input" placeholder="Введите пароль" />
-              <span  id="error-passwordenter"class="error-message">Password_validation_message</span>
+              <input type="password" id="passwordenter" required minlength="8" class="popup__input"
+                placeholder="Введите пароль" />
+              <span id="error-passwordenter" class="error-message">Password_validation_message</span>
             </div>
+            <span id="error-userenter" class="error-message error-message_user-enter"></span>
             <button disabled type="submit" class="button popup__button popup__enter-button">Войти</button>
             <div class="popup__link-container">
               <p class="popup__message">или</p>
@@ -349,16 +401,17 @@
             </div>
             <h4 class="popup__subtitle">Пароль</h4>
             <div class="popup__input-container">
-              <input type="password" id="passwordregistration"required minlength="8" class="popup__input" placeholder="Введите пароль" />
+              <input type="password" id="passwordregistration" required minlength="8" class="popup__input"
+                placeholder="Введите пароль" />
               <span id="error-passwordregistration" class="error-message">Password_validation_message</span>
             </div>
             <h4 class="popup__subtitle">Имя</h4>
             <div class="popup__input-container">
-              <input type="text" id="nameregistration" required minlength="8" class="popup__input" placeholder="Введите своё имя" />
-              <span id="error-nameregistration" class="error-message">Name_validation_message</span>
-              <span id="error-userregistration" class="error-message error-message_user">Такой пользователь уже есть</span>
+              <input type="text" id="name" required class="popup__input" placeholder="Введите своё имя" />
+              <span id="error-name" class="error-message">Name_validation_message</span>
+              <!-- <span id="error-userregistration" class="error-message error-message_user"></span> -->
             </div>
-
+            <span id="error-userregistration" class="error-message error-message_user-registration"></span>
             <button disabled type="submit" class="button popup__button popup__registration-button">
               Зарегистрироваться
             </button>
@@ -381,10 +434,11 @@
         </div>
       </div>
 
+
+
     </div>
   </div>
-
-  <script src="main/main.59388135175743d5c9c9.js"></script>
+  <script src="main/main.5a70e1e57d56ca56a17b.js"></script>
 </body>
 
 </html>
