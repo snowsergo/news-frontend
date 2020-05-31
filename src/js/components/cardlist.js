@@ -69,6 +69,7 @@ ${newSource.outerHTML}
 
   // подготовка массива карточек с news.api
   getRenderArray(arr, tag) {
+    this.articlesLeft = [];
     for (let obj of arr) {
       this.articlesLeft.push({
         title: obj.title,

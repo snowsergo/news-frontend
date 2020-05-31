@@ -58,6 +58,7 @@ function signup(event) {
       registrationForm.elements.name.value
     )
     .then((res) => {
+      //console.log(res);
       if (res.ok) {
         // popupObj.close(popupRegistration);
         closeRegistrationForm();
@@ -183,7 +184,10 @@ function getNews(event) {
 // отрисовка по 3 карточки пока не закончатся
 function displayCards() {
   for (let i = 0; i < 3; i++) {
-    cardlistObj.renderAll(card.create(cardlistObj.articlesLeft[0]),headerObj.page);
+    cardlistObj.renderAll(
+      card.create(cardlistObj.articlesLeft[0]),
+      headerObj.page
+    );
     cardlistObj.articlesLeft.shift(); // удаляем отрисованный элемен из массива
     if (cardlistObj.articlesLeft == 0) {
       preloaderObj.renderButton(false);

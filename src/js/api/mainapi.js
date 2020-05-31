@@ -19,7 +19,6 @@ export default class MainApi {
   signup(server, email, password, name) {
     return fetch(`${server}/signup`, {
       method: "POST",
-      // mode:'no-cors',
       headers: {
         "Content-Type": "application/json",
       },
@@ -37,7 +36,7 @@ export default class MainApi {
   signin(server, email, password) {
     return fetch(`${server}/signin`, {
       method: "POST",
-      credentials: "include",
+     // credentials: "include",
       // mode:'no-cors',
       headers: {
         "Content-Type": "application/json",
@@ -71,7 +70,7 @@ export default class MainApi {
   //забирает все статьи;
   getArticles(server) {
     return fetch(`${server}/articles`, {
-      credentials: "include",
+     credentials: "include",
     }).then((res) => {
       if (res.ok) {
         return res.json();
@@ -89,8 +88,8 @@ export default class MainApi {
   createArticle(server, obj) {
     return fetch(`${server}/articles`, {
       method: "POST",
-      credentials: "include",
-      //mode:'no-cors',
+       credentials: "include",
+    //  mode:'no-cors',
       headers: {
         "Content-Type": "application/json",
       },
@@ -117,7 +116,7 @@ export default class MainApi {
   //удаляет статью.
   removeArticle(server, articleId) {
     return fetch(`${server}/articles/${articleId}`, {
-      credentials: "include",
+     credentials: "include",
       method: "DELETE",
     }).catch((err) => {
       console.log("Ошибка удаления карточки", err);
