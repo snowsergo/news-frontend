@@ -6,8 +6,6 @@
 ## Текущая версия
 1.1.0
 
-## Ссылка на сайт
-[http://snowsergo-news.tk](http://snowsergo-news.tk)
 
 ## Описание работы главной страницы:
 Вход пользователя по нажатю на кнопку АВТОРИЗАЦИЯ.
@@ -41,6 +39,8 @@ git clone https://github.com/snowsergo/news-frontend.git
 npm i
 ```
 Настройте отправку запросов на http://localhost:3000 в файле server-info.js
+
+
 
 
 
